@@ -25,7 +25,7 @@
             getEarthquake() {
                 let self = this;
                 axios
-                .get('http://localhost:3000/earthquakes/latest')
+                .get('/api/earthquakes/latest')
                 .then(function(response) {
                     self.location = response.data.properties.place;
                     self.mag = response.data.properties.mag;
