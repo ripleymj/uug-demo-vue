@@ -5,6 +5,9 @@
             <p class="mag"><span>{{ mag }}</span> magnitude</p>
             <p class="location">{{ location }}</p>
             <p class="time">{{ time }}</p>
+            <div class="tux">
+              <img src="./tux_mask.svg" alt="Tux, the JMU Unix Users Group penguin mascot.">
+            </div>
         </div>
     </main>
 </template>
@@ -68,5 +71,10 @@
     main .mag > span {
         font-size: 24px;
         font-weight: bold;
+    }
+    main .tux > img {
+      margin-top: 24px;
+      width: auto;
+      max-height: 160px;
     }
 </style>
