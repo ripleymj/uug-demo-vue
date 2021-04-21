@@ -6,6 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "preinstall": "npm install -g @vue/cli @vue/cli-service-global",
+    "serve": "vue serve ./src/app.vue",
     "build": "vue build ./src/app.vue"
   },
   "author": "",
