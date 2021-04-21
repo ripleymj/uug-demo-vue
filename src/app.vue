@@ -1,7 +1,7 @@
 <template>
     <main>
         <div>
-            <h1>Latest Earthquake</h1>
+            <h1>Latest Earthquake (Outside Harrisonburg)</h1>
             <p class="mag"><span>{{ mag }}</span> magnitude</p>
             <p class="location">{{ location }}</p>
             <p class="time">{{ time }}</p>
