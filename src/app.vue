@@ -18,14 +18,16 @@
             return {
                 location: "",
                 mag: 0.0,
-                time: ""
+                time: "",
+                local: (process.env.NODE_ENV !== "production")
             }
         },
         methods: {
             getEarthquake() {
                 let self = this;
+                let endpoint = (this.local)? 'http://localhost:3000/earthquakes/latest' : '/api/earthquakes/latest';
                 axios
-                .get('/api/earthquakes/latest')
+                .get(endpoint)
                 .then(function(response) {
                     self.location = response.data.properties.place;
                     self.mag = response.data.properties.mag;
