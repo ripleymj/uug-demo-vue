@@ -19,7 +19,7 @@
                 location: "",
                 mag: 0.0,
                 time: "",
-                local: (process.env.NODE_ENV !== "production")
+                local: (location.hostname === "localhost")
             }
         },
         methods: {
