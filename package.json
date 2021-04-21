@@ -10,5 +10,9 @@
   "license": "ISC",
   "dependencies": {
     "axios": "^0.21.1"
+  },
+  "devDependencies": {
+    "@vue/cli": "^4.5.12",
+    "@vue/cli-service-global": "^4.5.12"
   }
 }
